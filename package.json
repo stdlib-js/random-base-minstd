@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/random-base-minstd",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A linear congruential pseudorandom number generator (LCG) based on Park and Miller.",
   "license": "Apache-2.0",
   "author": {
@@ -18,7 +18,9 @@
     "benchmark": "./benchmark",
     "doc": "./docs",
     "example": "./examples",
+    "include": "./include",
     "lib": "./lib",
+    "src": "./src",
     "test": "./test"
   },
   "types": "./docs/types",
