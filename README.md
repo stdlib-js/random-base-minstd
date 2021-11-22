@@ -20,7 +20,7 @@ limitations under the License.
 
 # MINSTD
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > A linear congruential pseudorandom number generator ([LCG][lcg]) based on Park and Miller.
 
@@ -321,9 +321,9 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/random/base/minstd-shuffle`][@stdlib/random/base/minstd-shuffle]: A linear congruential pseudorandom number generator (LCG) whose output is shuffled.
--   [`@stdlib/random/base/mt19937`][@stdlib/random/base/mt19937]: A 32-bit Mersenne Twister pseudorandom number generator.
--   [`@stdlib/random/base/randi`][@stdlib/random/base/randi]: pseudorandom numbers having integer values.
+-   <span class="package-name">[`@stdlib/random/base/minstd-shuffle`][@stdlib/random/base/minstd-shuffle]</span><span class="delimiter">: </span><span class="description">A linear congruential pseudorandom number generator (LCG) whose output is shuffled.</span>
+-   <span class="package-name">[`@stdlib/random/base/mt19937`][@stdlib/random/base/mt19937]</span><span class="delimiter">: </span><span class="description">A 32-bit Mersenne Twister pseudorandom number generator.</span>
+-   <span class="package-name">[`@stdlib/random/base/randi`][@stdlib/random/base/randi]</span><span class="delimiter">: </span><span class="description">pseudorandom numbers having integer values.</span>
 
 </section>
 
@@ -374,8 +374,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/random-base-minstd/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/random-base-minstd?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/random-base-minstd.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/random-base-minstd/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
