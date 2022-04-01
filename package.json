@@ -1,0 +1,44 @@
+{
+  "name": "@stdlib/random-base-minstd",
+  "version": "0.0.0",
+  "description": "A linear congruential pseudorandom number generator (LCG) based on Park and Miller.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/random-base-minstd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "statistics",
+    "stats",
+    "prng",
+    "pseudorandom",
+    "random",
+    "rand",
+    "randint",
+    "randu",
+    "uniform",
+    "generator",
+    "lcg",
+    "minstd",
+    "lehmer",
+    "park",
+    "miller",
+    "park-miller",
+    "seed",
+    "seedable"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
