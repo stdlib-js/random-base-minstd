@@ -24,14 +24,30 @@ limitations under the License.
 
 > A linear congruential pseudorandom number generator ([LCG][lcg]) based on Park and Miller.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-base-minstd
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@deno/mod.js';
+var minstd = require( '@stdlib/random-base-minstd' );
 ```
 
 #### minstd()
@@ -80,7 +96,7 @@ var r = rand();
 or, for arbitrary length seeds, an array-like `object` containing signed 32-bit integers
 
 ```javascript
-import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
+var Int32Array = require( '@stdlib/array-int32' );
 
 var rand = minstd.factory({
     'seed': new Int32Array( [ 1234 ] )
@@ -259,7 +275,7 @@ var o = minstd.toJSON();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@deno/mod.js';
+var minstd = require( '@stdlib/random-base-minstd' );
 
 var seed;
 var rand;
@@ -330,7 +346,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -360,8 +376,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/random-base-minstd.svg
 [npm-url]: https://npmjs.org/package/@stdlib/random-base-minstd
 
-[test-image]: https://github.com/stdlib-js/random-base-minstd/actions/workflows/test.yml/badge.svg
-[test-url]: https://github.com/stdlib-js/random-base-minstd/actions/workflows/test.yml
+[test-image]: https://github.com/stdlib-js/random-base-minstd/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/random-base-minstd/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/random-base-minstd/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/random-base-minstd?branch=main
@@ -373,19 +389,20 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[umd]: https://github.com/umdjs/umd
-[es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
-
-[deno-url]: https://github.com/stdlib-js/random-base-minstd/tree/deno
-[umd-url]: https://github.com/stdlib-js/random-base-minstd/tree/umd
-[esm-url]: https://github.com/stdlib-js/random-base-minstd/tree/esm
-
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
+
+[umd]: https://github.com/umdjs/umd
+[es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+
+[deno-url]: https://github.com/stdlib-js/random-base-minstd/tree/deno
+[umd-url]: https://github.com/stdlib-js/random-base-minstd/tree/umd
+[esm-url]: https://github.com/stdlib-js/random-base-minstd/tree/esm
+[branches-url]: https://github.com/stdlib-js/random-base-minstd/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/random-base-minstd/main/LICENSE
 
@@ -395,15 +412,15 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [@park:1988]: http://dx.doi.org/10.1145/63039.63042
 
-[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32/tree/deno
+[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32
 
 <!-- <related-links> -->
 
-[@stdlib/random/base/minstd-shuffle]: https://github.com/stdlib-js/random-base-minstd-shuffle/tree/deno
+[@stdlib/random/base/minstd-shuffle]: https://github.com/stdlib-js/random-base-minstd-shuffle
 
-[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937/tree/deno
+[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937
 
-[@stdlib/random/base/randi]: https://github.com/stdlib-js/random-base-randi/tree/deno
+[@stdlib/random/base/randi]: https://github.com/stdlib-js/random-base-randi
 
 <!-- </related-links> -->
 
