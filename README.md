@@ -35,30 +35,20 @@ limitations under the License.
 
 > A linear congruential pseudorandom number generator ([LCG][lcg]) based on Park and Miller.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/random-base-minstd
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd' );
+import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@deno/mod.js';
+```
+
+You can also import the following named exports from the package:
+
+```javascript
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@deno/mod.js';
 ```
 
 #### minstd()
@@ -107,7 +97,7 @@ var r = rand();
 or, for arbitrary length seeds, an array-like `object` containing signed 32-bit integers
 
 ```javascript
-var Int32Array = require( '@stdlib/array-int32' );
+import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
 
 var rand = minstd.factory({
     'seed': new Int32Array( [ 1234 ] )
@@ -286,7 +276,7 @@ var o = minstd.toJSON();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd' );
+import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@deno/mod.js';
 
 var seed;
 var rand;
@@ -357,7 +347,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -423,15 +413,15 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [@park:1988]: http://dx.doi.org/10.1145/63039.63042
 
-[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32
+[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32/tree/deno
 
 <!-- <related-links> -->
 
-[@stdlib/random/base/minstd-shuffle]: https://github.com/stdlib-js/random-base-minstd-shuffle
+[@stdlib/random/base/minstd-shuffle]: https://github.com/stdlib-js/random-base-minstd-shuffle/tree/deno
 
-[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937
+[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937/tree/deno
 
-[@stdlib/random/base/randi]: https://github.com/stdlib-js/random-base-randi
+[@stdlib/random/base/randi]: https://github.com/stdlib-js/random-base-randi/tree/deno
 
 <!-- </related-links> -->
 
