@@ -35,30 +35,38 @@ limitations under the License.
 
 > A linear congruential pseudorandom number generator ([LCG][lcg]) based on Park and Miller.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/random-base-minstd
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd' );
+minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var minstd = require( 'path/to/vendor/umd/random-base-minstd/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.minstd;
+})();
+</script>
 ```
 
 #### minstd()
@@ -285,8 +293,13 @@ var o = minstd.toJSON();
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var minstd = require( '@stdlib/random-base-minstd' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var seed;
 var rand;
@@ -313,6 +326,11 @@ rand = minstd.factory({
 for ( i = 0; i < 100; i++ ) {
     console.log( rand() );
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -423,15 +441,15 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [@park:1988]: http://dx.doi.org/10.1145/63039.63042
 
-[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32
+[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32/tree/umd
 
 <!-- <related-links> -->
 
-[@stdlib/random/base/minstd-shuffle]: https://github.com/stdlib-js/random-base-minstd-shuffle
+[@stdlib/random/base/minstd-shuffle]: https://github.com/stdlib-js/random-base-minstd-shuffle/tree/umd
 
-[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937
+[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937/tree/umd
 
-[@stdlib/random/base/randi]: https://github.com/stdlib-js/random-base-randi
+[@stdlib/random/base/randi]: https://github.com/stdlib-js/random-base-randi/tree/umd
 
 <!-- </related-links> -->
 
