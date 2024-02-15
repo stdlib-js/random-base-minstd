@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@deno/mod.js';
+import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@v0.2.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@deno/mod.js';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@v0.2.0-deno/mod.js';
 ```
 
 #### minstd()
@@ -276,7 +276,7 @@ var o = minstd.toJSON();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@deno/mod.js';
+import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@v0.2.0-deno/mod.js';
 
 var seed;
 var rand;
