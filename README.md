@@ -35,38 +35,32 @@ limitations under the License.
 
 > A linear congruential pseudorandom number generator ([LCG][lcg]) based on Park and Miller.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-base-minstd
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var minstd = require( 'path/to/vendor/umd/random-base-minstd/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.minstd;
-})();
-</script>
+var minstd = require( '@stdlib/random-base-minstd' );
 ```
 
 #### minstd()
@@ -128,23 +122,20 @@ var r = rand();
 To return a generator having a specific initial state, set the generator `state` option.
 
 ```javascript
-var rand;
-var bool;
+// Generate pseudorandom numbers, thus progressing the generator state:
 var r;
 var i;
-
-// Generate pseudorandom numbers, thus progressing the generator state:
 for ( i = 0; i < 1000; i++ ) {
     r = minstd();
 }
 
 // Create a new PRNG initialized to the current state of `minstd`:
-rand = minstd.factory({
+var rand = minstd.factory({
     'state': minstd.state
 });
 
 // Test that the generated pseudorandom numbers are the same:
-bool = ( rand() === minstd() );
+var bool = ( rand() === minstd() );
 // returns true
 ```
 
@@ -180,17 +171,15 @@ var max = minstd.MAX;
 The value used to seed `minstd()`.
 
 ```javascript
-var rand;
+// Generate pseudorandom values...
 var r;
 var i;
-
-// Generate pseudorandom values...
 for ( i = 0; i < 100; i++ ) {
     r = minstd();
 }
 
 // Generate the same pseudorandom values...
-rand = minstd.factory({
+var rand = minstd.factory({
     'seed': minstd.seed
 });
 for ( i = 0; i < 100; i++ ) {
@@ -293,26 +282,18 @@ var o = minstd.toJSON();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
-
-var seed;
-var rand;
-var i;
+```javascript
+var minstd = require( '@stdlib/random-base-minstd' );
 
 // Generate pseudorandom numbers...
+var i;
 for ( i = 0; i < 100; i++ ) {
     console.log( minstd() );
 }
 
 // Create a new pseudorandom number generator...
-seed = 1234;
-rand = minstd.factory({
+var seed = 1234;
+var rand = minstd.factory({
     'seed': seed
 });
 for ( i = 0; i < 100; i++ ) {
@@ -326,11 +307,6 @@ rand = minstd.factory({
 for ( i = 0; i < 100; i++ ) {
     console.log( rand() );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -447,21 +423,21 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [@park:1988]: http://dx.doi.org/10.1145/63039.63042
 
-[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32/tree/umd
+[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32
 
 <!-- <related-links> -->
 
-[@stdlib/random/array/minstd]: https://github.com/stdlib-js/random-array-minstd/tree/umd
+[@stdlib/random/array/minstd]: https://github.com/stdlib-js/random-array-minstd
 
-[@stdlib/random/iter/minstd]: https://github.com/stdlib-js/random-iter-minstd/tree/umd
+[@stdlib/random/iter/minstd]: https://github.com/stdlib-js/random-iter-minstd
 
-[@stdlib/random/streams/minstd]: https://github.com/stdlib-js/random-streams-minstd/tree/umd
+[@stdlib/random/streams/minstd]: https://github.com/stdlib-js/random-streams-minstd
 
-[@stdlib/random/base/minstd-shuffle]: https://github.com/stdlib-js/random-base-minstd-shuffle/tree/umd
+[@stdlib/random/base/minstd-shuffle]: https://github.com/stdlib-js/random-base-minstd-shuffle
 
-[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937/tree/umd
+[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937
 
-[@stdlib/random/base/randi]: https://github.com/stdlib-js/random-base-randi/tree/umd
+[@stdlib/random/base/randi]: https://github.com/stdlib-js/random-base-randi
 
 <!-- </related-links> -->
 
