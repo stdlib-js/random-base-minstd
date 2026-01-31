@@ -2,9 +2,9 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
+<section class="release" id="v0.2.2">
 
-## Unreleased (2025-08-11)
+## 0.2.2 (2026-01-31)
 
 <section class="bug-fixes">
 
@@ -22,6 +22,8 @@
 
 <details>
 
+-   [`11581aa`](https://github.com/stdlib-js/stdlib/commit/11581aaca8c3cb824cbb92c0c0f80e76890bdb20) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`54da286`](https://github.com/stdlib-js/stdlib/commit/54da28610f5ee6b2aa181addb1775d32f79043ee) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
 -   [`8805742`](https://github.com/stdlib-js/stdlib/commit/8805742fbac8884ef6727b4a177f1a0cc940bdce) - **chore:** resolve lint errors in `random/base/minstd` [(#6498)](https://github.com/stdlib-js/stdlib/pull/6498) _(by Abdul Kaium, Athan Reines)_
 -   [`05cdb8f`](https://github.com/stdlib-js/stdlib/commit/05cdb8f1e70b25fdd7fdaa822d8180fbf9588083) - **docs:** update examples _(by Athan Reines)_
 -   [`faa4da3`](https://github.com/stdlib-js/stdlib/commit/faa4da3f2c52be1b422d3b08c7ee6b659d848556) - **docs:** fix include paths in examples _(by Athan Reines)_
