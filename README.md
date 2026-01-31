@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/random-base-minstd/tags). For example,
+
+```javascript
 import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@v0.2.2-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@v0.2.2-esm/index.mjs';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@esm/index.mjs';
 ```
 
 #### minstd()
@@ -276,7 +281,7 @@ var o = minstd.toJSON();
 <body>
 <script type="module">
 
-import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@v0.2.2-esm/index.mjs';
+import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@esm/index.mjs';
 
 // Generate pseudorandom numbers...
 var i;
